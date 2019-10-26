@@ -1,0 +1,10 @@
+# \b assert position at a word boundary
+# boundary between word and non-word
+
+
+
+Regex_Pattern = r'\b[aeiouAEIOU][a-zA-Z]*\b'	# Do not delete 'r'.
+
+import re
+
+print(str(bool(re.search(Regex_Pattern, input()))).lower())
